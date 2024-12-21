@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onderzoek naar Klimaatverandering op de Zuidpool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            padding-bottom: 60px;
+        }
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #023e8a;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: none;
+            margin-bottom: 80px;
+        }
+        footer {
+            background: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+        }
+        .results-section {
+            margin-top: 20px;
+        }
+        .result-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #0077b6;
+            margin-bottom: 20px;
+        }
+        .result-subsection {
+            margin: 10px 0;
+            padding-left: 20px;
+            border-left: 2px solid #ccc;
+        }
+        .data-point {
+            margin: 5px 0;
+            padding: 5px 0;
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .contact-info h3 {
+            color: #0077b6;
+            margin-top: 0;
+        }
+    </style>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Onderzoek naar Klimaatverandering op de Zuidpool</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('wie')">Wie Wij Zijn</a>
+        <a href="#" onclick="showSection('wat')">Wat We Doen</a>
+        <a href="#" onclick="showSection('hoe')">Hoe We Te Werk Gaan</a>
+        <a href="#" onclick="showSection('resultaten')">Resultaten</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Welkom</h2>
+        <p>Welkom op onze website. Onze missie is om de impact van klimaatverandering op de Zuidpool beter te begrijpen en aan het licht te brengen. Als een van de meest afgelegen en kwetsbare regio's ter wereld, biedt de Zuidpool cruciale inzichten in de wereldwijde klimaatdynamiek. Gedurende onze twee maanden durende expeditie hebben we ijskappen, atmosferische gegevens en lokale ecosystemen geanalyseerd. Op deze website delen we ons onderzoek, onze methodologieën en de belangrijke bevindingen die we hebben verzameld. We nodigen u uit om meer te leren over ons team, onze werkwijze en onze visie voor een duurzame toekomst.</p>
+    </div>
+
+    <div class="container" id="wie">
+        <h2>Wie Wij Zijn</h2>
+        <p>Wij zijn een multidisciplinair team van onderzoekers, bestaande uit klimatologen, glaciologen en biologen met jarenlange ervaring in poolonderzoek. Ons team werkt samen om de impact van klimaatverandering op kwetsbare ecosystemen te begrijpen.</p>
+    </div>
+
+    <div class="container" id="wat">
+        <h2>Wat We Doen</h2>
+        <p>Ons doel is om de gevolgen van klimaatverandering op het Antarctisch gebied te onderzoeken. We richten ons op het smelten van ijs, veranderingen in biodiversiteit en de impact op het wereldwijde klimaat. Tijdens onze expeditie hebben we meerdere specifieke gebieden bestudeerd, waaronder de manier waarop smeltwater van gletsjers bijdraagt aan zeespiegelstijging. Ook hebben we de biodiversiteit van micro-organismen in ijskernen onderzocht, wat ons inzicht geeft in hoe ecosystemen zich aanpassen aan veranderende omstandigheden. Daarnaast hebben we chemische veranderingen in de atmosfeer geanalyseerd, zoals de concentraties van koolstofdioxide en methaan, die direct verband houden met menselijke activiteiten.</p>
+    </div>
+
+    <div class="container" id="hoe">
+        <h2>Hoe We Te Werk Gaan</h2>
+        <p>Gedurende twee maanden hebben we verschillende methoden gebruikt, waaronder:</p>
+        <ul>
+            <li>Monstername van ijs- en sneeuwlagen met behulp van boorkernen, waarmee we historische data over temperatuur en atmosferische samenstellingen konden analyseren.</li>
+            <li>Geavanceerde satellietmetingen, zoals radarinterferometrie, om veranderingen in ijskapdikte en snelheid van gletsjerbewegingen te meten.</li>
+            <li>Analyse van luchtmonsters met gaschromatografie om concentraties van broeikasgassen zoals koolstofdioxide en methaan te identificeren.</li>
+            <li>Watermonsters genomen met steriele apparatuur om de chemische samenstelling en eventuele aanwezigheid van microplastics te onderzoeken.</li>
+            <li>Gebruik van drones uitgerust met hyperspectrale camera's om veranderingen in sneeuwreflectiviteit en vegetatie te monitoren.</li>
+        </ul>
+        <p>Daarnaast werkten we nauw samen met lokale onderzoeksstations om data te vergelijken en onze analyses te valideren. Al onze activiteiten werden uitgevoerd met strikte naleving van milieuprotocollen om de impact op dit kwetsbare gebied te minimaliseren.</p>
+    </div>
+
+    <div class="container" id="resultaten">
+        <h2>Resultaten van het Onderzoek</h2>
+        
+        <div class="results-section">
+            <div class="result-item">
+                <h3>1. Smeltende IJskappen en Gletsjers</h3>
+                <p>Onze uitgebreide analyses tonen alarmerende veranderingen in de ijsmassa van Antarctica:</p>
+                
+                <div class="result-subsection">
+                    <h4>1.1 Algemene IJskapafname</h4>
+                    <ul>
+                        <li>Totale ijsmassaverlies: 3% over de laatste 10 jaar (±0.5% meetfout)</li>
+                        <li>Versnelde afname westkust: 1.2% per jaar</li>
+                        <li>Oostkust afname: 0.8% per jaar</li>
+                        <li>Totaal volumeverlies: geschat op 219 ±23 kubieke kilometer per jaar</li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>1.2 Gletsjeronderzoek</h4>
+                    <ul>
+                        <li>Verhoogde gletsjersnelheid: gemiddeld 15% sneller dan 5 jaar geleden</li>
+                        <li>Toegenomen calving events: 47 grote events in 2023 (vergelijking: 29 in 2018)</li>
+                        <li>Verdunning van gletsjerfronten: gemiddeld 2.3 meter per jaar</li>
+                        <li>Subglaciale smeltwater toename: 28% meer meren geïdentificeerd</li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>1.3 IJsplaat Stabiliteit</h4>
+                    <ul>
+                        <li>Structurele integriteit: 18% afname in compressieve sterkte</li>
+                        <li>Scheurvorming: 34% toename in oppervlakte scheuren</li>
+                        <li>Risicozones: 7 nieuwe gebieden geïdentificeerd met hoog risico op afbreken</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="result-item">
+                <h3>2. Atmosferische Veranderingen</h3>
+                
+                <div class="result-subsection">
+                    <h4>2.1 Broeikasgasconcentraties</h4>
+                    <ul>
+                        <li>Koolstofdioxide (CO₂):
+                            <ul>
+                                <li>Huidige concentratie: 418 ppm (delen per miljoen)</li>
+                                <li>Jaarlijkse toename: 2.4 ppm</li>
+                                <li>Totale stijging: 18% sinds vorige metingen</li>
+                            </ul>
+                        </li>
+                        <li>Methaan (CH₄):
+                            <ul>
+                                <li>Huidige concentratie: 1892 ppb (delen per miljard)</li>
+                                <li>Jaarlijkse toename: 12 ppb</li>
+                                <li>Stijging sinds vorige meting: 12%</li>
+                            </ul>
+                        </li>
+                        <li>Stikstofoxide (N₂O):
+                            <ul>
+                                <li>Concentratie: 334 ppb</li>
+                                <li>Jaarlijkse toename: 0.9 ppb</li>
+                                <li>Totale stijging: 7%</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>2.2 Temperatuurmetingen</h4>
+                    <ul>
+                        <li>Gemiddelde temperatuurstijging: 0.8°C over laatste decade</li>
+                        <li>Extreme temperatuur events:
+                            <ul>
+                                <li>Frequentie: 35% toename</li>
+                                <li>Intensiteit: gemiddeld 1.2°C hoger dan historisch gemiddelde</li>
+                                <li>Duur: gemiddeld 2.3 dagen langer dan voorheen</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="result-item">
+                <h3>3. Impact op Ecosystemen</h3>
+                
+                <div class="result-subsection">
+                    <h4>3.1 Microbiële Veranderingen</h4>
+                    <ul>
+                        <li>Thermofiele bacteriën: 23% populatietoename</li>
+                        <li>Algensoorten:
+                            <ul>
+                                <li>15% meer warmte-tolerante soorten</li>
+                                <li>8 nieuwe soorten geïdentificeerd</li>
+                                <li>3 voorheen dominante soorten in afname</li>
+                            </ul>
+                        </li>
+                        <li>Bodemorganismen: significante verschuivingen in populatiedynamiek</li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>3.2 Impact op Grotere Organismen</h4>
+                    <ul>
+                        <li>Krill populaties:
+                            <ul>
+                                <li>12% afname in biomassa</li>
+                                <li>Verandering in migratiepatronen</li>
+                                <li>Verschuiving in voedselgebieden</li>
+                            </ul>
+                        </li>
+                        <li>Pinguïn kolonies:
+                            <ul>
+                                <li>Adeliepinguïns: 8% populatieafname</li>
+                                <li>Keizerpinguïns: 15% afname in broedparen</li>
+                                <li>Veranderde nestlocaties: 5 kolonies verplaatst</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="result-item">
+                <h3>4. Zeespiegelstijging en Oceaanmetingen</h3>
+                
+                <div class="result-subsection">
+                    <h4>4.1 Zeespiegelstijging</h4>
+                    <ul>
+                        <li>Huidige bijdrage: 0.2mm per jaar</li>
+                        <li>Versnellingsratio: 0.005mm/jaar²</li>
+                        <li>Projecties:
+                            <ul>
+                                <li>5 jaar: 0.3mm per jaar</li>
+                                <li>10 jaar: 0.5mm per jaar</li>
+                                <li>25 jaar: 1.2mm per jaar (geschat)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>4.2 Oceaanchemie</h4>
+                    <ul>
+                        <li>Verzuring:
+                            <ul>
+                                <li>pH-waarde daling: 0.05 eenheden</li>
+                                <li>Carbonaatconcentratie: 12% afname</li>
+                            </ul>
+                        </li>
+                        <li>Zoutgehalte:
+                            <ul
+<li>Oppervlakte: 0.3‰ afname</li>
+                                <li>Dieptewater: 0.1‰ toename</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="result-item">
+                <h3>5. Toekomstprojecties en Modellen</h3>
+                
+                <div class="result-subsection">
+                    <h4>5.1 Korte Termijn (5-10 jaar)</h4>
+                    <ul>
+                        <li>IJsmassaverlies: verwachte versnelling naar 250-300 km³/jaar</li>
+                        <li>Temperatuur: projectie van +0.3°C tot +0.5°C</li>
+                        <li>Ecosystemen: verwachte 20% verschuiving in soortendiversiteit</li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>5.2 Middellange Termijn (10-25 jaar)</h4>
+                    <ul>
+                        <li>Kritieke drempelpunten:
+                            <ul>
+                                <li>3 ijsplaten met hoog risico op volledig verlies</li>
+                                <li>Mogelijke versnelling zeespiegelstijging tot 2mm/jaar</li>
+                                <li>Onomkeerbare veranderingen in lokale ecosystemen</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="result-subsection">
+                    <h4>5.3 Aanbevelingen</h4>
+                    <ul>
+                        <li>Intensievere monitoring van kritieke gebieden</li>
+                        <li>Uitbreiding van het meetnetwerk met 15 nieuwe stations</li>
+                        <li>Ontwikkeling van vroegwaarschuwingssystemen voor ijsplaat instabiliteit</li>
+                        <li>Verbeterde internationale samenwerking voor data-uitwisseling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <h3>Contactpersoon</h3>
+            <p><strong>Naam:</strong> Jippe Wijnen</p>
+            <p><strong>Adres:</strong> Hoogstraten</p>
+            <p><strong>E-mail:</strong> wijnenjippe@gmail.com</p>
+            <p><strong>GSM:</strong> +32 468 27 12 22</p>
+            <p>Voor vragen, bedenkingen of opmerkingen over het onderzoek, of als u geïnteresseerd bent om deel uit te maken van ons onderzoeksteam, aarzel niet om contact op te nemen.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Onderzoek Zuidpoolteam. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
